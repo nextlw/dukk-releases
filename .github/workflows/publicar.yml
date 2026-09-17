@@ -1,0 +1,70 @@
+# Transforma em RELEASE o que a CI do Dukk (repositório privado) empurra para cá.
+#
+# Por que este workflow existe: o build acontece no repo privado, e o token de
+# lá não escreve aqui. Em vez de um token pessoal (que só nasce pela web e
+# vence), a CI de lá tem uma CHAVE DE DEPLOY deste repo — que só sabe fazer
+# `git push`. Ela empurra um branch `publicar/vX.Y.Z` com os instaladores e o
+# `latest.json`; este workflow, com a permissão do PRÓPRIO repo, cria a release
+# e apaga o branch.
+#
+# Quem consegue disparar isto: quem tem escrita aqui (a organização) e a chave
+# de deploy. Pull request de fora NÃO dispara — o gatilho é push em branch
+# deste repositório, e fork não empurra branch para cá.
+name: Publicar release
+
+on:
+  push:
+    branches: ['publicar/**']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: conferir o que chegou
+        id: v
+        run: |
+          tag="${GITHUB_REF_NAME#publicar/}"
+          if ! [[ "$tag" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::o branch precisa ser publicar/vMAJOR.MINOR.PATCH (veio '$GITHUB_REF_NAME')"
+            exit 1
+          fi
+          # O manifesto tem que falar da MESMA versão do branch: é ele que o app
+          # instalado lê, e um descompasso publicaria um aviso que mente.
+          versao="$(jq -r .versao latest.json)"
+          if [ "v$versao" != "$tag" ]; then
+            echo "::error::latest.json diz '$versao', o branch diz '$tag'"
+            exit 1
+          fi
+          ls -la
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "versao=$versao" >> "$GITHUB_OUTPUT"
+
+      # `gh release create` com arquivos cria como rascunho, sobe tudo e só
+      # então publica — o `releases/latest` nunca aponta para uma versão pela
+      # metade. `--target main` porque a tag precisa morar num commit que
+      # continue existindo: o branch `publicar/*` é apagado logo abaixo.
+      - name: criar a release
+        run: |
+          gh release create "${{ steps.v.outputs.tag }}" \
+            --target main --latest \
+            --title "Dukk ${{ steps.v.outputs.versao }}" \
+            --notes "Instale por cima da versão atual — suas conversas e seu login são mantidos. Instruções por sistema no [README](https://github.com/${GITHUB_REPOSITORY}#readme)." \
+            Dukk-* latest.json
+
+      # Os instaladores não ficam no histórico do git: o branch some, e o
+      # GitHub recolhe os objetos órfãos. Roda mesmo se a release falhar, para
+      # um ensaio quebrado não deixar 50 MB pendurados.
+      - name: apagar o branch de entrega
+        if: always()
+        run: git push origin --delete "$GITHUB_REF_NAME"
