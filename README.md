@@ -24,3 +24,7 @@ Os instaladores ainda não têm assinatura digital, então o sistema pode pedir 
 - **Windows:** na tela do SmartScreen, **Mais informações** → **Executar assim mesmo**.
 
 Baixe o Dukk somente por esta página ou pelo aviso dentro do próprio aplicativo.
+
+## Segurança
+
+Cada versão é assinada. O Dukk só aceita atualização cujo manifesto tenha a assinatura da Dukk **e** cujo instalador bata com o que foi assinado — ele baixa, confere e só então abre o arquivo. Um arquivo trocado é apagado na hora.

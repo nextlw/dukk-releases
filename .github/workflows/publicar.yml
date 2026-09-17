@@ -46,6 +46,13 @@ jobs:
             echo "::error::latest.json diz '$versao', o branch diz '$tag'"
             exit 1
           fi
+          # Este repo NÃO confere a assinatura — quem confere é o app de cada
+          # pessoa, contra a chave embutida nele. Aqui só se garante que ela
+          # veio: release sem `.sig` seria uma versão que todo app recusa.
+          if [ ! -s latest.json.sig ]; then
+            echo "::error::faltou o latest.json.sig — o manifesto precisa vir assinado"
+            exit 1
+          fi
           ls -la
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
           echo "versao=$versao" >> "$GITHUB_OUTPUT"
@@ -60,7 +67,7 @@ jobs:
             --target main --latest \
             --title "Dukk ${{ steps.v.outputs.versao }}" \
             --notes "Instale por cima da versão atual — suas conversas e seu login são mantidos. Instruções por sistema no [README](https://github.com/${GITHUB_REPOSITORY}#readme)." \
-            Dukk-* latest.json
+            Dukk-* latest.json latest.json.sig
 
       # Os instaladores não ficam no histórico do git: o branch some, e o
       # GitHub recolhe os objetos órfãos. Roda mesmo se a release falhar, para
