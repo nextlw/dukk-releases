@@ -61,14 +61,18 @@ jobs:
       # então publica — o `releases/latest` nunca aponta para uma versão pela
       # metade. `--target main` porque a tag precisa morar num commit que
       # continue existindo: o branch `publicar/*` é apagado logo abaixo.
+      # As notas vêm do manifesto (`notas`, escritas para o cliente no botão
+      # "Lançar versão"). Montadas num ARQUIVO e passadas por `--notes-file`:
+      # a primeira versão interpolava um `$(jq …)` com quebras de linha dentro
+      # do `run: |`, e a continuação sem indentação invalidou o YAML — a
+      # rodada da 0.0.8 nem chegou a ter jobs.
       - name: criar a release
         run: |
+          { jq -r '.notas // ""' latest.json; echo; echo "Instale por cima da versão atual — suas conversas e seu login são mantidos. Instruções por sistema no [README](https://github.com/${GITHUB_REPOSITORY}#readme)."; } > "$RUNNER_TEMP/notas.md"
           gh release create "${{ steps.v.outputs.tag }}" \
             --target main --latest \
             --title "Dukk ${{ steps.v.outputs.versao }}" \
-            --notes "$(jq -r '.notas // ""' latest.json)
-
-Instale por cima da versão atual — suas conversas e seu login são mantidos. Instruções por sistema no [README](https://github.com/${GITHUB_REPOSITORY}#readme)." \
+            --notes-file "$RUNNER_TEMP/notas.md" \
             Dukk-* latest.json latest.json.sig
 
       # Os instaladores não ficam no histórico do git: o branch some, e o
