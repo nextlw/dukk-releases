@@ -66,7 +66,9 @@ jobs:
           gh release create "${{ steps.v.outputs.tag }}" \
             --target main --latest \
             --title "Dukk ${{ steps.v.outputs.versao }}" \
-            --notes "Instale por cima da versão atual — suas conversas e seu login são mantidos. Instruções por sistema no [README](https://github.com/${GITHUB_REPOSITORY}#readme)." \
+            --notes "$(jq -r '.notas // ""' latest.json)
+
+Instale por cima da versão atual — suas conversas e seu login são mantidos. Instruções por sistema no [README](https://github.com/${GITHUB_REPOSITORY}#readme)." \
             Dukk-* latest.json latest.json.sig
 
       # Os instaladores não ficam no histórico do git: o branch some, e o
