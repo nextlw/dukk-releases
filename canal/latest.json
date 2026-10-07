@@ -1,0 +1,22 @@
+{
+  "versao": "0.5.11-hml.3",
+  "notas": "Homolog 0.5.11-hml.3 (commit 3939410): a main mais os PRs abertos.",
+  "plataformas": {
+    "darwin/arm64": {
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.5.11-hml.3-macos/Dukk-Homolog-0.5.11-hml.3-macos.dmg",
+      "sha256": "8d0f8389dfa4ad920396217bbdd3db809f1cd683377cf34846838f3d890eeee4"
+    },
+    "darwin/amd64": {
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.5.11-hml.3-macos/Dukk-Homolog-0.5.11-hml.3-macos.dmg",
+      "sha256": "8d0f8389dfa4ad920396217bbdd3db809f1cd683377cf34846838f3d890eeee4"
+    },
+    "windows/amd64": {
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.5.11-hml.3-windows/Dukk-Homolog-0.5.11-hml.3-windows-setup.exe",
+      "sha256": "195e8d3dafbcf5ee617649c1176dfa59ae3b81eee8b682e33fc598fd16d60064"
+    },
+    "linux/amd64": {
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.5.11-hml.3-linux/Dukk-Homolog-0.5.11-hml.3-linux-amd64.tar.gz",
+      "sha256": "71dc9f9aaa0173c43901d9ca55d0b4c128101871423a69c9a913cb6588646dc1"
+    }
+  }
+}
