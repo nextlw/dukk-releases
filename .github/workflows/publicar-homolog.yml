@@ -103,7 +103,7 @@ jobs:
           git config user.name "CI do Dukk"; git config user.email "ci@dukk.invalid"
           for tentativa in 1 2 3 4 5 6; do
             git fetch -q origin homolog && git checkout -q -B homolog FETCH_HEAD
-            atual="$(sed -n 's/^<!-- versao: \(.*\) -->$/\1/p' HOMOLOG.md 2>/dev/null)"
+            atual="$(sed -n 's/^<!-- versao: \(.*\) -->$/\1/p' HOMOLOG.md 2>/dev/null || true)"
             # Uma homolog mais VELHA que termina depois não rouba a página.
             if [ -n "$atual" ] && [ "$atual" != "$VERSAO" ] \
                && [ "$(printf '%s\n%s\n' "${atual//-hml./.}" "${VERSAO//-hml./.}" | sort -V | tail -1)" = "${atual//-hml./.}" ]; then
