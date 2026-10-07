@@ -7,18 +7,24 @@
 # partir daqui. A `main` e o `publicar.yml` da produção ficam intocados.
 #
 # Por que a homolog não chega à produção:
-#   - a release sai como PRÉ-RELEASE: o `releases/latest` (o manifesto da
+#   - cada release sai como PRÉ-RELEASE: o `releases/latest` (o manifesto da
 #     produção) ignora pré-release, e o `--latest=false` deixa isso explícito;
-#   - o app de homolog lê OUTRO manifesto, preso à release fixa
-#     `homolog-latest` (`releases/download/homolog-latest/latest.json`), que
-#     o app de produção não conhece.
+#   - o app de homolog lê OUTRO manifesto, um ARQUIVO neste branch
+#     (`github.com/nextlw/dukk-releases/raw/homolog/canal/latest.json`), que o
+#     app de produção não conhece.
+#
+# ⚠️ ESTE REPO TEM RELEASES IMUTÁVEIS. [MEDIDO 07/10/2026] subir arquivo numa
+# release já publicada dá `HTTP 422: Cannot upload assets to an immutable
+# release`. Daí as duas escolhas abaixo:
+#   - UMA PRÉ-RELEASE POR SISTEMA (`homolog-vX.Y.Z-hml.N-macos` etc.), criada
+#     já com o instalador dentro: o macOS publica sem esperar o Windows;
+#   - o manifesto e a página NÃO moram em release (seriam congelados), e sim em
+#     arquivos deste branch, reescritos a cada versão.
 #
 # Branches que chegam (empurrados com a chave de deploy):
-#   publicar-homolog/<tag>/macOS|Windows|Linux  → sobe aquele instalador
-#   publicar-homolog/<tag>/manifesto            → sobe o latest.json assinado
-#                                                 e o copia para `homolog-latest`
-# <tag> = homolog-vX.Y.Z-hml.N. Cada sistema publica SOZINHO, assim que o
-# build dele termina: o macOS não espera o Windows.
+#   publicar-homolog/<tag>/macOS|Windows|Linux  → pré-release daquele sistema
+#   publicar-homolog/<tag>/manifesto            → canal/latest.json(.sig)
+# <tag> = homolog-vX.Y.Z-hml.N.
 name: Publicar homolog
 
 on:
@@ -37,7 +43,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
-      PAGINA_FIXA: homolog-latest
     steps:
       - uses: actions/checkout@v4
 
@@ -66,81 +71,87 @@ jobs:
           ls -la
           { echo "tag=$tag"; echo "versao=$versao"; echo "parte=$parte"; } >> "$GITHUB_OUTPUT"
 
-      # Os três sistemas chegam quase juntos e cada um tenta criar a release:
-      # quem perde a corrida acha a release já criada e só sobe o arquivo.
-      - name: garantir a pré-release da versão
-        env:
-          TAG: ${{ steps.v.outputs.tag }}
-          VERSAO: ${{ steps.v.outputs.versao }}
-        run: |
-          gh release view "$TAG" >/dev/null 2>&1 \
-            || gh release create "$TAG" --target homolog --prerelease --latest=false \
-                 --title "Dukk Homolog $VERSAO" \
-                 --notes "Versão de HOMOLOGAÇÃO do Dukk Enterprise. Fala com dukk.homolog.dukk.com.br, instala ao lado do Dukk normal e só se atualiza pelo canal de homolog. Não é para clientes." \
-            || gh release view "$TAG" >/dev/null
-
-      - name: subir o instalador
+      # Criada JÁ com o arquivo: o `gh release create` com arquivos sobe tudo
+      # num rascunho e só então publica — numa release imutável não há segunda
+      # chance de subir.
+      - name: pré-release do sistema
         if: steps.v.outputs.parte != 'manifesto'
-        run: gh release upload "${{ steps.v.outputs.tag }}" Dukk-Homolog-* --clobber
-
-      # O manifesto vai para a release da versão (registro) e para a FIXA, que
-      # é o endereço embutido no app de homolog.
-      - name: subir o manifesto
-        if: steps.v.outputs.parte == 'manifesto'
-        run: |
-          gh release upload "${{ steps.v.outputs.tag }}" latest.json latest.json.sig --clobber
-          gh release view "$PAGINA_FIXA" >/dev/null 2>&1 \
-            || gh release create "$PAGINA_FIXA" --target homolog --prerelease --latest=false \
-                 --title "Dukk Homolog — versão atual" --notes "…" \
-            || gh release view "$PAGINA_FIXA" >/dev/null
-          gh release upload "$PAGINA_FIXA" latest.json latest.json.sig --clobber
-
-      # A página FIXA é o link que se manda ao time: aponta sempre para os
-      # instaladores da última homolog. Reescrita a cada parte, para o macOS
-      # aparecer ali sem esperar os outros.
-      - name: atualizar a página fixa
         env:
           TAG: ${{ steps.v.outputs.tag }}
           VERSAO: ${{ steps.v.outputs.versao }}
+          PARTE: ${{ steps.v.outputs.parte }}
         run: |
-          gh release view "$PAGINA_FIXA" >/dev/null 2>&1 \
-            || gh release create "$PAGINA_FIXA" --target homolog --prerelease --latest=false \
-                 --title "Dukk Homolog — versão atual" --notes "…" \
-            || gh release view "$PAGINA_FIXA" >/dev/null
-          # Uma homolog mais VELHA que termina depois (rodada relançada) não
-          # rouba a página da mais nova.
-          atual="$(gh release view "$PAGINA_FIXA" --json body -q .body | sed -n 's/^<!-- versao: \(.*\) -->$/\1/p')"
-          if [ -n "$atual" ] && [ "$atual" != "$VERSAO" ] \
-             && [ "$(printf '%s\n%s\n' "${atual//-hml./.}" "${VERSAO//-hml./.}" | sort -V | tail -1)" = "${atual//-hml./.}" ]; then
-            echo "a página já mostra $atual, mais nova que $VERSAO — mantida"
-            exit 0
+          sis="$(echo "$PARTE" | tr '[:upper:]' '[:lower:]')"
+          mkdir "$RUNNER_TEMP/pacote" && mv Dukk-Homolog-* "$RUNNER_TEMP/pacote/"
+          gh release create "${TAG}-${sis}" --target homolog --prerelease --latest=false \
+            --title "Dukk Homolog ${VERSAO} — ${PARTE}" \
+            --notes "Versão de HOMOLOGAÇÃO do Dukk Enterprise para ${PARTE}. Fala com dukk.homolog.dukk.com.br, instala ao lado do Dukk normal e só se atualiza pelo canal de homolog. Não é para clientes. Página com os três sistemas: https://github.com/${GITHUB_REPOSITORY}/blob/homolog/HOMOLOG.md" \
+            "$RUNNER_TEMP"/pacote/*
+
+      # O manifesto e a página são ARQUIVOS do branch `homolog`. Os quatro
+      # jobs (três sistemas + manifesto) escrevem aqui quase juntos: quem
+      # perde a corrida do push refaz por cima do que o outro escreveu.
+      - name: atualizar o branch homolog (manifesto e página)
+        env:
+          TAG: ${{ steps.v.outputs.tag }}
+          VERSAO: ${{ steps.v.outputs.versao }}
+          PARTE: ${{ steps.v.outputs.parte }}
+        run: |
+          if [ "$PARTE" = "manifesto" ]; then
+            mkdir -p "$RUNNER_TEMP/canal" && cp latest.json latest.json.sig "$RUNNER_TEMP/canal/"
           fi
-          base="https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG}"
-          linha() {
-            arq="$(gh release view "$TAG" --json assets -q ".assets[].name" | grep -E "$2" | head -1)"
-            if [ -n "$arq" ]; then echo "| **$1** | [$arq]($base/$arq) |"; else echo "| **$1** | ainda em build… |"; fi
-          }
-          {
-            echo "<!-- versao: $VERSAO -->"
-            echo "## Dukk Homolog $VERSAO"
-            echo
-            echo "Versão de **homologação** do Dukk Enterprise: fala com \`dukk.homolog.dukk.com.br\` (os PRs abertos do dukk-code e do Enterprise), entra com o mesmo login da int e instala **ao lado** do Dukk normal, com pasta de dados própria."
-            echo
-            echo "| Sistema | Instalador |"
-            echo "|---|---|"
-            linha "macOS (Intel e Apple Silicon)" '\-macos\.dmg$'
-            linha "Windows 10/11" '\-windows-setup\.exe$'
-            linha "Linux (x86-64)" '\-linux-amd64\.tar\.gz$'
-            echo
-            echo "### Avisos ao abrir (instaladores sem assinatura)"
-            echo
-            echo "- **macOS:** arraste o *Dukk Homolog* para *Aplicativos*. Na primeira abertura o macOS bloqueia: abra **Ajustes do Sistema → Privacidade e Segurança**, role até o aviso do *Dukk Homolog* e clique **Abrir Mesmo Assim**. Ou, no Terminal: \`xattr -dr com.apple.quarantine \"/Applications/Dukk Homolog.app\"\`."
-            echo "- **Windows:** no SmartScreen, **Mais informações → Executar assim mesmo**. Instala em \`%LOCALAPPDATA%\\Programs\\Dukk Homolog\`."
-            echo "- **Linux:** extraia numa pasta própria e rode \`./Dukk\`. Requer \`webkit2gtk-4.1\` e \`gtk3\`."
-            echo
-            echo "O app de homolog só se atualiza por este canal. Ele **nunca** chega a quem usa o Dukk normal."
-          } > "$RUNNER_TEMP/notas.md"
-          gh release edit "$PAGINA_FIXA" --title "Dukk Homolog — $VERSAO" --notes-file "$RUNNER_TEMP/notas.md" --prerelease --latest=false
+          git config user.name "CI do Dukk"; git config user.email "ci@dukk.invalid"
+          for tentativa in 1 2 3 4 5 6; do
+            git fetch -q origin homolog && git checkout -q -B homolog FETCH_HEAD
+            atual="$(sed -n 's/^<!-- versao: \(.*\) -->$/\1/p' HOMOLOG.md 2>/dev/null)"
+            # Uma homolog mais VELHA que termina depois não rouba a página.
+            if [ -n "$atual" ] && [ "$atual" != "$VERSAO" ] \
+               && [ "$(printf '%s\n%s\n' "${atual//-hml./.}" "${VERSAO//-hml./.}" | sort -V | tail -1)" = "${atual//-hml./.}" ]; then
+              echo "o branch já está em $atual, mais nova que $VERSAO — mantido"
+              exit 0
+            fi
+            if [ "$PARTE" = "manifesto" ]; then
+              mkdir -p canal && cp "$RUNNER_TEMP"/canal/* canal/
+            fi
+            linha() {
+              rel="${TAG}-$2"
+              arq="$(gh release view "$rel" --json assets -q '.assets[].name' 2>/dev/null | head -1)"
+              if [ -n "$arq" ]; then
+                echo "| **$1** | [$arq](https://github.com/${GITHUB_REPOSITORY}/releases/download/${rel}/${arq}) |"
+              else
+                echo "| **$1** | ainda em build… |"
+              fi
+            }
+            {
+              echo "<!-- versao: $VERSAO -->"
+              echo "# Dukk Homolog $VERSAO"
+              echo
+              echo "Versão de **homologação** do Dukk Enterprise: fala com \`dukk.homolog.dukk.com.br\` (os PRs abertos do dukk-code e do Enterprise), entra com o mesmo login de sempre e instala **ao lado** do Dukk normal, com pasta de dados própria."
+              echo
+              echo "| Sistema | Instalador |"
+              echo "|---|---|"
+              linha "macOS (Intel e Apple Silicon)" macos
+              linha "Windows 10/11" windows
+              linha "Linux (x86-64)" linux
+              echo
+              echo "## Avisos ao abrir (instaladores sem assinatura)"
+              echo
+              echo "- **macOS:** abra o \`.dmg\` e arraste o *Dukk Homolog* para *Aplicativos*. Na primeira abertura o macOS bloqueia. Vá em **Ajustes do Sistema → Privacidade e Segurança**, role até o aviso do *Dukk Homolog* e clique **Abrir Mesmo Assim**. Ou, no Terminal: \`xattr -dr com.apple.quarantine \"/Applications/Dukk Homolog.app\"\`."
+              echo "- **Windows:** no SmartScreen, **Mais informações → Executar assim mesmo**. Instala em \`%LOCALAPPDATA%\\Programs\\Dukk Homolog\`."
+              echo "- **Linux:** extraia numa pasta própria e rode \`./Dukk\`. Requer \`webkit2gtk-4.1\` e \`gtk3\`."
+              echo
+              echo "O app de homolog só se atualiza por este canal (\`canal/latest.json\` deste branch) e **nunca** chega a quem usa o Dukk normal."
+              echo
+              echo "Todas as versões de homolog: [pré-releases](https://github.com/${GITHUB_REPOSITORY}/releases)."
+            } > HOMOLOG.md
+            git add HOMOLOG.md canal 2>/dev/null || git add HOMOLOG.md
+            git diff --cached --quiet && { echo "nada mudou"; exit 0; }
+            git commit -q -m "homolog: ${VERSAO} — ${PARTE}"
+            if git push -q origin HEAD:homolog; then echo "branch homolog atualizado"; exit 0; fi
+            sleep $((tentativa * 3))
+          done
+          echo "::error::não consegui atualizar o branch homolog"
+          exit 1
 
       - name: apagar o branch de entrega
         if: always()
