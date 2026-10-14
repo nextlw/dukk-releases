@@ -1,22 +1,22 @@
 {
-  "versao": "0.7.0-hml.18",
-  "notas": "Homolog 0.7.0-hml.18 (commit cb5ab30): a main mais os PRs abertos.",
+  "versao": "0.7.0-hml.19",
+  "notas": "Homolog 0.7.0-hml.19 (commit 6096d30): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.0-hml.18-macos/Dukk-Homolog-0.7.0-hml.18-macos.dmg",
-      "sha256": "aac20c536eb584f090032c8f6306bf5289847cde6f7460bba7c6cef9023b48fd"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.0-hml.19-macos/Dukk-Homolog-0.7.0-hml.19-macos.dmg",
+      "sha256": "aab2f9dfe60d6f262f479ae046e640360c01f98982528a7665937151ef7fc465"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.0-hml.18-macos/Dukk-Homolog-0.7.0-hml.18-macos.dmg",
-      "sha256": "aac20c536eb584f090032c8f6306bf5289847cde6f7460bba7c6cef9023b48fd"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.0-hml.19-macos/Dukk-Homolog-0.7.0-hml.19-macos.dmg",
+      "sha256": "aab2f9dfe60d6f262f479ae046e640360c01f98982528a7665937151ef7fc465"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.0-hml.18-windows/Dukk-Homolog-0.7.0-hml.18-windows-setup.exe",
-      "sha256": "c9b9b43ef636d921e9e3d6568757f2930011128b92ec2dd383addd80f2025f4e"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.0-hml.19-windows/Dukk-Homolog-0.7.0-hml.19-windows-setup.exe",
+      "sha256": "c5f7f7eb63c7e51992f731edf0dec50648399ce536f667d6e769bce9b0296890"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.0-hml.18-linux/Dukk-Homolog-0.7.0-hml.18-linux-amd64.tar.gz",
-      "sha256": "b62a184e58a51b707d291069c962acff2045b72105538df7d17ac08e2afa3f0c"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.0-hml.19-linux/Dukk-Homolog-0.7.0-hml.19-linux-amd64.tar.gz",
+      "sha256": "397f9b3f417501ada2c6ad917665e46e24133f287664a1322bbd4e58e22da80e"
     }
   }
 }
