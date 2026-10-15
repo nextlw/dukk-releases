@@ -1,13 +1,13 @@
-<!-- versao: 0.7.1-hml.20 -->
-# Dukk Homolog 0.7.1-hml.20
+<!-- versao: 0.7.1-hml.21 -->
+# Dukk Homolog 0.7.1-hml.21
 
 Versão de **homologação** do Dukk Enterprise: fala com `dukk.homolog.dukk.com.br` (os PRs abertos do dukk-code e do Enterprise), entra com o mesmo login de sempre e instala **ao lado** do Dukk normal, com pasta de dados própria.
 
 | Sistema | Instalador |
 |---|---|
-| **macOS (Intel e Apple Silicon)** | [Dukk-Homolog-0.7.1-hml.20-macos.dmg](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.20-macos/Dukk-Homolog-0.7.1-hml.20-macos.dmg) |
-| **Windows 10/11** | [Dukk-Homolog-0.7.1-hml.20-windows-setup.exe](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.20-windows/Dukk-Homolog-0.7.1-hml.20-windows-setup.exe) |
-| **Linux (x86-64)** | [Dukk-Homolog-0.7.1-hml.20-linux-amd64.tar.gz](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.20-linux/Dukk-Homolog-0.7.1-hml.20-linux-amd64.tar.gz) |
+| **macOS (Intel e Apple Silicon)** | ainda em build… |
+| **Windows 10/11** | [Dukk-Homolog-0.7.1-hml.21-windows-setup.exe](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.21-windows/Dukk-Homolog-0.7.1-hml.21-windows-setup.exe) |
+| **Linux (x86-64)** | ainda em build… |
 
 ## Avisos ao abrir (instaladores sem assinatura)
 
