@@ -1,22 +1,22 @@
 {
-  "versao": "0.7.1-hml.21",
-  "notas": "Homolog 0.7.1-hml.21 (commit 6d1aeb6): a main mais os PRs abertos.",
+  "versao": "0.7.1-hml.22",
+  "notas": "Homolog 0.7.1-hml.22 (commit 894cf35): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.21-macos/Dukk-Homolog-0.7.1-hml.21-macos.dmg",
-      "sha256": "4e97f331167eb85149bee273a0989121e105927f7d3ec51ad659be6f3cae22a0"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.22-macos/Dukk-Homolog-0.7.1-hml.22-macos.dmg",
+      "sha256": "d8f411953ac4bf3c154bab385d3b4a5efdacaf56fc36f1238532879dcb3c12ba"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.21-macos/Dukk-Homolog-0.7.1-hml.21-macos.dmg",
-      "sha256": "4e97f331167eb85149bee273a0989121e105927f7d3ec51ad659be6f3cae22a0"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.22-macos/Dukk-Homolog-0.7.1-hml.22-macos.dmg",
+      "sha256": "d8f411953ac4bf3c154bab385d3b4a5efdacaf56fc36f1238532879dcb3c12ba"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.21-windows/Dukk-Homolog-0.7.1-hml.21-windows-setup.exe",
-      "sha256": "fb695b34757f453355a8001018b753a011703c2025e0ab5aabef54adb14febae"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.22-windows/Dukk-Homolog-0.7.1-hml.22-windows-setup.exe",
+      "sha256": "1c8bf9a2cb92dc66a3380d3b9bf05fba41ce7920df2a67d856cbba418da467eb"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.21-linux/Dukk-Homolog-0.7.1-hml.21-linux-amd64.tar.gz",
-      "sha256": "c6fb607e26ec477703b037a88d2c1df910c52d8e4f2257d9051f4c6c5bcf67e2"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.22-linux/Dukk-Homolog-0.7.1-hml.22-linux-amd64.tar.gz",
+      "sha256": "b50c37e9225911f0a00595c8ea1f43be9e88d2e2c55ec4aae53fd0232d738532"
     }
   }
 }
