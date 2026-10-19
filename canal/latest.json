@@ -1,22 +1,22 @@
 {
-  "versao": "0.7.1-hml.34",
-  "notas": "Homolog 0.7.1-hml.34 (commit fbd801d): a main mais os PRs abertos.",
+  "versao": "0.7.1-hml.35",
+  "notas": "Homolog 0.7.1-hml.35 (commit a560954): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.34-macos/Dukk-Homolog-0.7.1-hml.34-macos.dmg",
-      "sha256": "6b399e1d5154bd259b37cd14a868a7f5b0d3577c488a94d2f766c62d4aab45a1"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.35-macos/Dukk-Homolog-0.7.1-hml.35-macos.dmg",
+      "sha256": "8a6be08951fd4c5054e40d1c14c375c35866b1cc80496ebcc8981413acf266ba"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.34-macos/Dukk-Homolog-0.7.1-hml.34-macos.dmg",
-      "sha256": "6b399e1d5154bd259b37cd14a868a7f5b0d3577c488a94d2f766c62d4aab45a1"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.35-macos/Dukk-Homolog-0.7.1-hml.35-macos.dmg",
+      "sha256": "8a6be08951fd4c5054e40d1c14c375c35866b1cc80496ebcc8981413acf266ba"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.34-windows/Dukk-Homolog-0.7.1-hml.34-windows-setup.exe",
-      "sha256": "9cec8692944d776225f41937252f8f520b65cf22f4477859aba51d5d7d464b18"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.35-windows/Dukk-Homolog-0.7.1-hml.35-windows-setup.exe",
+      "sha256": "b82d062b217a9519da2d293d1f7804bd0b060bf457b2097df3252d878c2e9a56"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.34-linux/Dukk-Homolog-0.7.1-hml.34-linux-amd64.tar.gz",
-      "sha256": "fa72d1e9c038100c846e5fe2ed649065671a028c249a7c05e09663ab04d101c4"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.7.1-hml.35-linux/Dukk-Homolog-0.7.1-hml.35-linux-amd64.tar.gz",
+      "sha256": "8848eed364a2174cacc45d4e54a8647ec017194988d2a2bc02c9c337624596bc"
     }
   }
 }
