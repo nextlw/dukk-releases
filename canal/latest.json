@@ -1,22 +1,22 @@
 {
-  "versao": "0.11.1-hml.44",
-  "notas": "Homolog 0.11.1-hml.44 (commit cd96824): a main mais os PRs abertos.",
+  "versao": "0.11.1-hml.45",
+  "notas": "Homolog 0.11.1-hml.45 (commit 0922eae): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.11.1-hml.44-macos/Dukk-Homolog-0.11.1-hml.44-macos.dmg",
-      "sha256": "71b6eb657a569c28aac05ce8e0976539f81862b5a6c2becbcbdfa620d264099c"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.11.1-hml.45-macos/Dukk-Homolog-0.11.1-hml.45-macos.dmg",
+      "sha256": "50e84cbcacd7888428266374fd79d1fde1c562b4cb72f9a96b9f2d639b01cf14"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.11.1-hml.44-macos/Dukk-Homolog-0.11.1-hml.44-macos.dmg",
-      "sha256": "71b6eb657a569c28aac05ce8e0976539f81862b5a6c2becbcbdfa620d264099c"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.11.1-hml.45-macos/Dukk-Homolog-0.11.1-hml.45-macos.dmg",
+      "sha256": "50e84cbcacd7888428266374fd79d1fde1c562b4cb72f9a96b9f2d639b01cf14"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.11.1-hml.44-windows/Dukk-Homolog-0.11.1-hml.44-windows-setup.exe",
-      "sha256": "1688cc59dbe01faa8a105df03755baa9d96ffe31a3f05bf58d93f5cc5b62f6ec"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.11.1-hml.45-windows/Dukk-Homolog-0.11.1-hml.45-windows-setup.exe",
+      "sha256": "dec29c771b7a9290c64c295878ae441d6d6b2e0a411fb79b4e23484027b4d5f6"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.11.1-hml.44-linux/Dukk-Homolog-0.11.1-hml.44-linux-amd64.tar.gz",
-      "sha256": "6a211978ad9c6a8c21b2c268718ce0b97947a3fba2e27fb0af78881e68dc1fdf"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.11.1-hml.45-linux/Dukk-Homolog-0.11.1-hml.45-linux-amd64.tar.gz",
+      "sha256": "f846887c144779a4b36f5c79e2c39bfbaee2d97659380d33a2d488fcd954863b"
     }
   }
 }
