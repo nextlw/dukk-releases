@@ -1,22 +1,22 @@
 {
-  "versao": "0.14.2-hml.80",
-  "notas": "Homolog 0.14.2-hml.80 (commit 986c21d): a main mais os PRs abertos.",
+  "versao": "0.15.0-hml.83",
+  "notas": "Homolog 0.15.0-hml.83 (commit 5389ead): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.14.2-hml.80-macos/Dukk-Homolog-0.14.2-hml.80-macos.dmg",
-      "sha256": "4f4f40b388c8f90898b6445470dcf608f687935e9496284eec6d89a9c9f3e8a0"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.15.0-hml.83-macos/Dukk-Homolog-0.15.0-hml.83-macos.dmg",
+      "sha256": "0ae7db11741eaeef41e47783d8cf0ba0fed52c5e15109580a00f836bafce6b6f"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.14.2-hml.80-macos/Dukk-Homolog-0.14.2-hml.80-macos.dmg",
-      "sha256": "4f4f40b388c8f90898b6445470dcf608f687935e9496284eec6d89a9c9f3e8a0"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.15.0-hml.83-macos/Dukk-Homolog-0.15.0-hml.83-macos.dmg",
+      "sha256": "0ae7db11741eaeef41e47783d8cf0ba0fed52c5e15109580a00f836bafce6b6f"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.14.2-hml.80-windows/Dukk-Homolog-0.14.2-hml.80-windows-setup.exe",
-      "sha256": "76bf2f5e418e7b190e578c78b8a8d0396c9ebb29b3adf11b93516b8becca7661"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.15.0-hml.83-windows/Dukk-Homolog-0.15.0-hml.83-windows-setup.exe",
+      "sha256": "1058625acce629ef8b0b1c51e096f83c8e95194e5be784f18c66d17b167ed9ed"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.14.2-hml.80-linux/Dukk-Homolog-0.14.2-hml.80-linux-amd64.tar.gz",
-      "sha256": "025770ef03e0efa2d54519d7b328bf612afdfb656e7326278cfca4b22fc7f977"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.15.0-hml.83-linux/Dukk-Homolog-0.15.0-hml.83-linux-amd64.tar.gz",
+      "sha256": "ba25150e757215d4767e9ade5e5552c95ed0f9f8875053661df913714c0f3562"
     }
   }
 }
