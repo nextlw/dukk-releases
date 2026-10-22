@@ -1,22 +1,22 @@
 {
-  "versao": "0.16.0-hml.97",
-  "notas": "Homolog 0.16.0-hml.97 (commit 9a1f454): a main mais os PRs abertos.",
+  "versao": "0.16.1-hml.101",
+  "notas": "Homolog 0.16.1-hml.101 (commit adf9892): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.16.0-hml.97-macos/Dukk-Homolog-0.16.0-hml.97-macos.dmg",
-      "sha256": "884f9a7026e8185df3a035aa580a39c993acd9a0aacc54e3ef2f1e585b3698b2"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.16.1-hml.101-macos/Dukk-Homolog-0.16.1-hml.101-macos.dmg",
+      "sha256": "2d30274865ea71e10fb8d0680662b1e6645f45a68dae0215b120ea20124ee653"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.16.0-hml.97-macos/Dukk-Homolog-0.16.0-hml.97-macos.dmg",
-      "sha256": "884f9a7026e8185df3a035aa580a39c993acd9a0aacc54e3ef2f1e585b3698b2"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.16.1-hml.101-macos/Dukk-Homolog-0.16.1-hml.101-macos.dmg",
+      "sha256": "2d30274865ea71e10fb8d0680662b1e6645f45a68dae0215b120ea20124ee653"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.16.0-hml.97-windows/Dukk-Homolog-0.16.0-hml.97-windows-setup.exe",
-      "sha256": "fc4f585d7de69ac3cf806647459a2d93b8f3a5a6835946fc08163e26df08347c"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.16.1-hml.101-windows/Dukk-Homolog-0.16.1-hml.101-windows-setup.exe",
+      "sha256": "0519e0d2d76f4bb9ed39e5728e812e60a237269a43369a5ed67c08bfcfbbf65b"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.16.0-hml.97-linux/Dukk-Homolog-0.16.0-hml.97-linux-amd64.tar.gz",
-      "sha256": "4da80a4e392fa67a9501574d9656ac0fddb3bbe8c15a1bf2b75b1b95306849b6"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.16.1-hml.101-linux/Dukk-Homolog-0.16.1-hml.101-linux-amd64.tar.gz",
+      "sha256": "ea803ebf9bd50f7fe58741c1e3b0ac45676368b495c77729b8cc5e42a0261a02"
     }
   }
 }
