@@ -1,22 +1,22 @@
 {
-  "versao": "0.15.1-hml.92",
-  "notas": "Homolog 0.15.1-hml.92 (commit 9c7d413): a main mais os PRs abertos.",
+  "versao": "0.15.2-hml.93",
+  "notas": "Homolog 0.15.2-hml.93 (commit 7efdab6): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.15.1-hml.92-macos/Dukk-Homolog-0.15.1-hml.92-macos.dmg",
-      "sha256": "0a372c27609257b016c9316b71854a2fe8328cd373954cd668a6319dc32184d4"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.15.2-hml.93-macos/Dukk-Homolog-0.15.2-hml.93-macos.dmg",
+      "sha256": "1676500fc2516ee6504b382832f9fbc16a988c074ac931175d55e7ce1e01727d"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.15.1-hml.92-macos/Dukk-Homolog-0.15.1-hml.92-macos.dmg",
-      "sha256": "0a372c27609257b016c9316b71854a2fe8328cd373954cd668a6319dc32184d4"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.15.2-hml.93-macos/Dukk-Homolog-0.15.2-hml.93-macos.dmg",
+      "sha256": "1676500fc2516ee6504b382832f9fbc16a988c074ac931175d55e7ce1e01727d"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.15.1-hml.92-windows/Dukk-Homolog-0.15.1-hml.92-windows-setup.exe",
-      "sha256": "01e902aa9455b8876be94685e69fcfc4d051348038bfdb335366b6fe9600d746"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.15.2-hml.93-windows/Dukk-Homolog-0.15.2-hml.93-windows-setup.exe",
+      "sha256": "99508c753aac8cb1671e7d8fe6a77e3bd54b286a2c5ecf18a1c90d1d63e677df"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.15.1-hml.92-linux/Dukk-Homolog-0.15.1-hml.92-linux-amd64.tar.gz",
-      "sha256": "89055f43b06524dd34abf1bf565920c214b7500f0a1a9cc4e673a8f521ae68b8"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.15.2-hml.93-linux/Dukk-Homolog-0.15.2-hml.93-linux-amd64.tar.gz",
+      "sha256": "459a72d21db24a4ec5d137662a2d73b46c91a33f9f51a31f39fab678fd7bab5b"
     }
   }
 }
