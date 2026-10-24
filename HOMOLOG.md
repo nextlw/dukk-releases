@@ -5,7 +5,7 @@ Versão de **homologação** do Dukk Enterprise: fala com `dukk.homolog.dukk.com
 
 | Sistema | Instalador |
 |---|---|
-| **macOS (Intel e Apple Silicon)** | ainda em build… |
+| **macOS (Intel e Apple Silicon)** | [Dukk-Homolog-0.16.2-hml.118-macos.dmg](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.16.2-hml.118-macos/Dukk-Homolog-0.16.2-hml.118-macos.dmg) |
 | **Windows 10/11** | [Dukk-Homolog-0.16.2-hml.118-windows-setup.exe](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.16.2-hml.118-windows/Dukk-Homolog-0.16.2-hml.118-windows-setup.exe) |
 | **Linux (x86-64)** | [Dukk-Homolog-0.16.2-hml.118-linux-amd64.tar.gz](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.16.2-hml.118-linux/Dukk-Homolog-0.16.2-hml.118-linux-amd64.tar.gz) |
 
