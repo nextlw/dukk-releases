@@ -1,22 +1,22 @@
 {
-  "versao": "0.17.2-hml.126",
-  "notas": "Homolog 0.17.2-hml.126 (commit 4a360bb): a main mais os PRs abertos.",
+  "versao": "0.18.0-hml.127",
+  "notas": "Homolog 0.18.0-hml.127 (commit 2d0f572): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.17.2-hml.126-macos/Dukk-Homolog-0.17.2-hml.126-macos.dmg",
-      "sha256": "21936d6bbe16f2fc2a4fc1ee77d6b20349321abb762a130ca2b14ced6ec35c13"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.18.0-hml.127-macos/Dukk-Homolog-0.18.0-hml.127-macos.dmg",
+      "sha256": "a0426616a91f41de4a273692ab3cc4c50e002266794970f6bfbe5ba48ada1060"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.17.2-hml.126-macos/Dukk-Homolog-0.17.2-hml.126-macos.dmg",
-      "sha256": "21936d6bbe16f2fc2a4fc1ee77d6b20349321abb762a130ca2b14ced6ec35c13"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.18.0-hml.127-macos/Dukk-Homolog-0.18.0-hml.127-macos.dmg",
+      "sha256": "a0426616a91f41de4a273692ab3cc4c50e002266794970f6bfbe5ba48ada1060"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.17.2-hml.126-windows/Dukk-Homolog-0.17.2-hml.126-windows-setup.exe",
-      "sha256": "407a169290f8a06199a0c5f7af34c3b87f0803e21b63fd2be7950aacf9f5c997"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.18.0-hml.127-windows/Dukk-Homolog-0.18.0-hml.127-windows-setup.exe",
+      "sha256": "462e8320f43fae918a24ea33055ebf3ff7a155f9e27d2f2d5a0b165c3baa5309"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.17.2-hml.126-linux/Dukk-Homolog-0.17.2-hml.126-linux-amd64.tar.gz",
-      "sha256": "f0e36dcc0c982fe563562508802ec9ee02a3d5118b5b45e1298638753906df84"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.18.0-hml.127-linux/Dukk-Homolog-0.18.0-hml.127-linux-amd64.tar.gz",
+      "sha256": "f8c4695a2c2cd3f150c1b7c734cff6d2d6432da3225e949882bcc0b4c8f995bc"
     }
   }
 }
