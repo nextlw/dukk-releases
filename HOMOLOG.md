@@ -7,7 +7,7 @@ Versão de **homologação** do Dukk Enterprise: fala com `dukk.homolog.dukk.com
 |---|---|
 | **macOS (Intel e Apple Silicon)** | ainda em build… |
 | **Windows 10/11** | [Dukk-Homolog-0.19.4-hml.145-windows-setup.exe](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.19.4-hml.145-windows/Dukk-Homolog-0.19.4-hml.145-windows-setup.exe) |
-| **Linux (x86-64)** | ainda em build… |
+| **Linux (x86-64)** | [Dukk-Homolog-0.19.4-hml.145-linux-amd64.tar.gz](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.19.4-hml.145-linux/Dukk-Homolog-0.19.4-hml.145-linux-amd64.tar.gz) |
 
 ## Avisos ao abrir (instaladores sem assinatura)
 
