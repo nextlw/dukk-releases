@@ -1,22 +1,22 @@
 {
-  "versao": "0.23.3-hml.177",
-  "notas": "Homolog 0.23.3-hml.177 (commit a165fc6): a main mais os PRs abertos.",
+  "versao": "0.23.3-hml.178",
+  "notas": "Homolog 0.23.3-hml.178 (commit aaba726): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.23.3-hml.177-macos/Dukk-Homolog-0.23.3-hml.177-macos.dmg",
-      "sha256": "05cecca86bd9a73cf86b853f19057758566893a64ae5e5aa5d4269ae54b06e51"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.23.3-hml.178-macos/Dukk-Homolog-0.23.3-hml.178-macos.dmg",
+      "sha256": "30242b136abf48cd16f220e19fbfec83da15398e049626e2e0a6c1219d6925ab"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.23.3-hml.177-macos/Dukk-Homolog-0.23.3-hml.177-macos.dmg",
-      "sha256": "05cecca86bd9a73cf86b853f19057758566893a64ae5e5aa5d4269ae54b06e51"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.23.3-hml.178-macos/Dukk-Homolog-0.23.3-hml.178-macos.dmg",
+      "sha256": "30242b136abf48cd16f220e19fbfec83da15398e049626e2e0a6c1219d6925ab"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.23.3-hml.177-windows/Dukk-Homolog-0.23.3-hml.177-windows-setup.exe",
-      "sha256": "b115e430a7d14e312d1dca86993b048c6b8104d4847942ff1c11341f1fd5530c"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.23.3-hml.178-windows/Dukk-Homolog-0.23.3-hml.178-windows-setup.exe",
+      "sha256": "c01af7c16127286788042bed8367fe144e955813945fb634624252193005ab20"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.23.3-hml.177-linux/Dukk-Homolog-0.23.3-hml.177-linux-amd64.tar.gz",
-      "sha256": "233cb03e33caff33c7b78138be0fb29e6360505ed1158a6e9dda9024f9c3ea31"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.23.3-hml.178-linux/Dukk-Homolog-0.23.3-hml.178-linux-amd64.tar.gz",
+      "sha256": "3f24852cb4d3855a509100e9c288651077bf3cf94fc682e389a6fffcdc8b535b"
     }
   }
 }
