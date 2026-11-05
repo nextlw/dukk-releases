@@ -1,22 +1,22 @@
 {
-  "versao": "0.29.0-hml.193",
-  "notas": "Homolog 0.29.0-hml.193 (commit 21909b7): a main mais os PRs abertos.",
+  "versao": "0.29.0-hml.194",
+  "notas": "Homolog 0.29.0-hml.194 (commit 84054e2): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.29.0-hml.193-macos/Dukk-Homolog-0.29.0-hml.193-macos.dmg",
-      "sha256": "d51de3925572b720d9b8c6250dc09c276fbdb1203ac0ffb0521425d14a4df071"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.29.0-hml.194-macos/Dukk-Homolog-0.29.0-hml.194-macos.dmg",
+      "sha256": "cd8bb9780bf863fa1ae752f653f6d962b5d8f8010f03a1041824e9ffd11bffc4"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.29.0-hml.193-macos/Dukk-Homolog-0.29.0-hml.193-macos.dmg",
-      "sha256": "d51de3925572b720d9b8c6250dc09c276fbdb1203ac0ffb0521425d14a4df071"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.29.0-hml.194-macos/Dukk-Homolog-0.29.0-hml.194-macos.dmg",
+      "sha256": "cd8bb9780bf863fa1ae752f653f6d962b5d8f8010f03a1041824e9ffd11bffc4"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.29.0-hml.193-windows/Dukk-Homolog-0.29.0-hml.193-windows-setup.exe",
-      "sha256": "b926d937f650c3b6391e69b83443b90f6d8d3e9d31aeae0c83bae6853d638477"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.29.0-hml.194-windows/Dukk-Homolog-0.29.0-hml.194-windows-setup.exe",
+      "sha256": "12ab3f9e8433b19d6c5c9388ba2efe36d88ec9e3d5007bc36b29fd5bcabb445f"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.29.0-hml.193-linux/Dukk-Homolog-0.29.0-hml.193-linux-amd64.tar.gz",
-      "sha256": "4d99ac838e3bcd932193904a88f425b6c63332729e9e30a0e0b82aa406adb47b"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.29.0-hml.194-linux/Dukk-Homolog-0.29.0-hml.194-linux-amd64.tar.gz",
+      "sha256": "78a9dc1c50baf3a1766987aba3b2f5676005d5936dd24ceaeb2fe603fadc7ca1"
     }
   }
 }
