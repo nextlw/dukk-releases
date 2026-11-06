@@ -1,22 +1,22 @@
 {
-  "versao": "0.30.0-hml.204",
-  "notas": "Homolog 0.30.0-hml.204 (commit f5f84a8): a main mais os PRs abertos.",
+  "versao": "0.31.0-hml.205",
+  "notas": "Homolog 0.31.0-hml.205 (commit f42c3cc): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.30.0-hml.204-macos/Dukk-Homolog-0.30.0-hml.204-macos.dmg",
-      "sha256": "7b20403b8e41a72d65e46a4f9de0a5f1efed19cafcf4966bc7e5c1f57c53240c"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.31.0-hml.205-macos/Dukk-Homolog-0.31.0-hml.205-macos.dmg",
+      "sha256": "62245bf571651f232479737dc03076d9998db69348f84ad5f5f87cbc3627eb25"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.30.0-hml.204-macos/Dukk-Homolog-0.30.0-hml.204-macos.dmg",
-      "sha256": "7b20403b8e41a72d65e46a4f9de0a5f1efed19cafcf4966bc7e5c1f57c53240c"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.31.0-hml.205-macos/Dukk-Homolog-0.31.0-hml.205-macos.dmg",
+      "sha256": "62245bf571651f232479737dc03076d9998db69348f84ad5f5f87cbc3627eb25"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.30.0-hml.204-windows/Dukk-Homolog-0.30.0-hml.204-windows-setup.exe",
-      "sha256": "4a8c5202814f1d5a2d25145c108aefd9d2188dc7eb5dfd1210538d00a82b4749"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.31.0-hml.205-windows/Dukk-Homolog-0.31.0-hml.205-windows-setup.exe",
+      "sha256": "ffa0f50371f9da4a54f90bbd9a8e1e8afb4f8f4dcf152518b9e5552ad11b35d8"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.30.0-hml.204-linux/Dukk-Homolog-0.30.0-hml.204-linux-amd64.tar.gz",
-      "sha256": "456b5d6239f492597c01170e4751320e54f07d4dc5c6565a3f428186f917d0de"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.31.0-hml.205-linux/Dukk-Homolog-0.31.0-hml.205-linux-amd64.tar.gz",
+      "sha256": "8c65fb53fd1b9a7e05d961d1eba28d6694c3ae7c75bc33c9abd20b4f23d901d3"
     }
   }
 }
