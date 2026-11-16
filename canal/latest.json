@@ -1,40 +1,40 @@
 {
-  "versao": "0.39.4-hml.242",
-  "notas": "Homolog 0.39.4-hml.242 (commit 7dca2cc): a main mais os PRs abertos.",
+  "versao": "0.39.4-hml.243",
+  "notas": "Homolog 0.39.4-hml.243 (commit 85f7959): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.242-macos/Dukk-Homolog-0.39.4-hml.242-macos.dmg",
-      "sha256": "2e91d20259f9c485fb1305be55b014aa388128c0fdfb8019494ed37de71aa111"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.243-macos/Dukk-Homolog-0.39.4-hml.243-macos.dmg",
+      "sha256": "510b00d09ccb5e5f37b0f0d5c4f2274255594cb7a4b11ece4fa4c4808d0795f9"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.242-macos/Dukk-Homolog-0.39.4-hml.242-macos.dmg",
-      "sha256": "2e91d20259f9c485fb1305be55b014aa388128c0fdfb8019494ed37de71aa111"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.243-macos/Dukk-Homolog-0.39.4-hml.243-macos.dmg",
+      "sha256": "510b00d09ccb5e5f37b0f0d5c4f2274255594cb7a4b11ece4fa4c4808d0795f9"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.242-windows/Dukk-Homolog-0.39.4-hml.242-windows-setup.exe",
-      "sha256": "6eb8b3abbf5c4d1292150e220eaaa032d1dc390d6a35f6f3b5b0f20ef31a7c8e"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.243-windows/Dukk-Homolog-0.39.4-hml.243-windows-setup.exe",
+      "sha256": "f93130e6b441506b5203a3ed7fc898273d84527e058ced3386d4976c1ecc2f3f"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.242-linux/Dukk-Homolog-0.39.4-hml.242-linux-amd64.tar.gz",
-      "sha256": "b4ab20c4e7726db1f7f4adc2c010f61885c6074f64ae515dc7397fe1cf2beba8"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.243-linux/Dukk-Homolog-0.39.4-hml.243-linux-amd64.tar.gz",
+      "sha256": "f3de461be9f6a37444fcc265a6a1aee5e4b961d16a16d21cd5e3f9eaf45b0f0f"
     }
   },
   "extensoes": {
     "darwin-arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.242-vscode/dukk-vscode-homolog-darwin-arm64-0.39.4-hml.242.vsix",
-      "sha256": "c5c340f29cb0ceb25ae070ca04388ecaaf3e6686c8ff8c46d6d47f8a841a034c"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.243-vscode/Dukk-Homolog-0.39.4-hml.243-vscode-darwin-arm64.vsix",
+      "sha256": "ea30c111e2c171ea1a34404fde82397f0d411d2aeaf8fa6cb354a124eddcad7a"
     },
     "darwin-x64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.242-vscode/dukk-vscode-homolog-darwin-x64-0.39.4-hml.242.vsix",
-      "sha256": "61c3ae69434e66e141847f62eca19e712a8324bde44ebb7470563500a3578da4"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.243-vscode/Dukk-Homolog-0.39.4-hml.243-vscode-darwin-x64.vsix",
+      "sha256": "4441c68cb45fd1c68db4c4aca94ee0e41c1beab9cfe4949e60e80f2c14be88c5"
     },
     "linux-x64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.242-vscode/dukk-vscode-homolog-linux-x64-0.39.4-hml.242.vsix",
-      "sha256": "aac6f51a4079de1681fafe05519f320efd7892b1fc3339c971efe0ae2b42b595"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.243-vscode/Dukk-Homolog-0.39.4-hml.243-vscode-linux-x64.vsix",
+      "sha256": "b46f54c26bb831562a3220d031f97b37d4c88be1c308cb5fb220af72ad7699da"
     },
     "win32-x64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.242-vscode/dukk-vscode-homolog-win32-x64-0.39.4-hml.242.vsix",
-      "sha256": "309ed9ba631ae033f3804bb3e2cc219ac5fe52615df752e7301fa38778a5a76c"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.39.4-hml.243-vscode/Dukk-Homolog-0.39.4-hml.243-vscode-win32-x64.vsix",
+      "sha256": "27ffb9f335ee5942d54c47058f275cdf57821d0ca0483b1d3ff2128e4b5cc508"
     }
   }
 }
