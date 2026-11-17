@@ -1,13 +1,13 @@
-<!-- versao: 0.40.0-hml.248 -->
-# Dukk Homolog 0.40.0-hml.248
+<!-- versao: 0.41.0-hml.249 -->
+# Dukk Homolog 0.41.0-hml.249
 
 Versão de **homologação** do Dukk Enterprise: fala com `dukk.homolog.dukk.com.br` (os PRs abertos do dukk-code e do Enterprise), entra com o mesmo login de sempre e instala **ao lado** do Dukk normal, com pasta de dados própria.
 
 | Sistema | Instalador |
 |---|---|
-| **macOS (Intel e Apple Silicon)** | [Dukk-Homolog-0.40.0-hml.248-macos.dmg](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.40.0-hml.248-macos/Dukk-Homolog-0.40.0-hml.248-macos.dmg) |
-| **Windows 10/11** | [Dukk-Homolog-0.40.0-hml.248-windows-setup.exe](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.40.0-hml.248-windows/Dukk-Homolog-0.40.0-hml.248-windows-setup.exe) |
-| **Linux (x86-64)** | [Dukk-Homolog-0.40.0-hml.248-linux-amd64.tar.gz](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.40.0-hml.248-linux/Dukk-Homolog-0.40.0-hml.248-linux-amd64.tar.gz) |
+| **macOS (Intel e Apple Silicon)** | [Dukk-Homolog-0.41.0-hml.249-macos.dmg](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.41.0-hml.249-macos/Dukk-Homolog-0.41.0-hml.249-macos.dmg) |
+| **Windows 10/11** | [Dukk-Homolog-0.41.0-hml.249-windows-setup.exe](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.41.0-hml.249-windows/Dukk-Homolog-0.41.0-hml.249-windows-setup.exe) |
+| **Linux (x86-64)** | [Dukk-Homolog-0.41.0-hml.249-linux-amd64.tar.gz](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.41.0-hml.249-linux/Dukk-Homolog-0.41.0-hml.249-linux-amd64.tar.gz) |
 
 ## Avisos ao abrir (instaladores sem assinatura)
 
