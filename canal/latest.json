@@ -1,22 +1,22 @@
 {
-  "versao": "0.42.1-hml.263",
-  "notas": "Homolog 0.42.1-hml.263 (commit 4a92581): a main mais os PRs abertos.",
+  "versao": "0.42.1-hml.264",
+  "notas": "Homolog 0.42.1-hml.264 (commit 78f7c92): a main mais os PRs abertos.",
   "plataformas": {
     "darwin/arm64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.263-macos/Dukk-Homolog-0.42.1-hml.263-macos.dmg",
-      "sha256": "d21782fd171f4826e39f193697b25d5c901c7ef26e705af314f7b9a6954e2d89"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.264-macos/Dukk-Homolog-0.42.1-hml.264-macos.dmg",
+      "sha256": "ec0c799276c370d79d6a315d37da6ac2a0e55ac3780082bebdd452d10d86b15c"
     },
     "darwin/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.263-macos/Dukk-Homolog-0.42.1-hml.263-macos.dmg",
-      "sha256": "d21782fd171f4826e39f193697b25d5c901c7ef26e705af314f7b9a6954e2d89"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.264-macos/Dukk-Homolog-0.42.1-hml.264-macos.dmg",
+      "sha256": "ec0c799276c370d79d6a315d37da6ac2a0e55ac3780082bebdd452d10d86b15c"
     },
     "windows/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.263-windows/Dukk-Homolog-0.42.1-hml.263-windows-setup.exe",
-      "sha256": "b2941a0becce66e6f5a362c9318f7361f67a461a941ecffafa780589e3a570f6"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.264-windows/Dukk-Homolog-0.42.1-hml.264-windows-setup.exe",
+      "sha256": "eaad7fad83db68f6d929131019984daf91a32d9a848b6b4063095cacfc599533"
     },
     "linux/amd64": {
-      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.263-linux/Dukk-Homolog-0.42.1-hml.263-linux-amd64.tar.gz",
-      "sha256": "f0678f7955e342f3577a27c42eba5e7d0e1b76ee9ef2c0d2531e82404a1c402e"
+      "url": "https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.264-linux/Dukk-Homolog-0.42.1-hml.264-linux-amd64.tar.gz",
+      "sha256": "cf70dd81cbe0941a841d5efa9dcd2e951cb7da2260e74d204c326b63341bcbec"
     }
   }
 }
