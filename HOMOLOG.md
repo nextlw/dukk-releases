@@ -1,13 +1,13 @@
-<!-- versao: 0.42.1-hml.264 -->
-# Dukk Homolog 0.42.1-hml.264
+<!-- versao: 0.42.1-hml.265 -->
+# Dukk Homolog 0.42.1-hml.265
 
 Versão de **homologação** do Dukk Enterprise: fala com `dukk.homolog.dukk.com.br` (os PRs abertos do dukk-code e do Enterprise), entra com o mesmo login de sempre e instala **ao lado** do Dukk normal, com pasta de dados própria.
 
 | Sistema | Instalador |
 |---|---|
-| **macOS (Intel e Apple Silicon)** | [Dukk-Homolog-0.42.1-hml.264-macos.dmg](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.264-macos/Dukk-Homolog-0.42.1-hml.264-macos.dmg) |
-| **Windows 10/11** | [Dukk-Homolog-0.42.1-hml.264-windows-setup.exe](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.264-windows/Dukk-Homolog-0.42.1-hml.264-windows-setup.exe) |
-| **Linux (x86-64)** | [Dukk-Homolog-0.42.1-hml.264-linux-amd64.tar.gz](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.264-linux/Dukk-Homolog-0.42.1-hml.264-linux-amd64.tar.gz) |
+| **macOS (Intel e Apple Silicon)** | [Dukk-Homolog-0.42.1-hml.265-macos.dmg](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.265-macos/Dukk-Homolog-0.42.1-hml.265-macos.dmg) |
+| **Windows 10/11** | [Dukk-Homolog-0.42.1-hml.265-windows-setup.exe](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.265-windows/Dukk-Homolog-0.42.1-hml.265-windows-setup.exe) |
+| **Linux (x86-64)** | [Dukk-Homolog-0.42.1-hml.265-linux-amd64.tar.gz](https://github.com/nextlw/dukk-releases/releases/download/homolog-v0.42.1-hml.265-linux/Dukk-Homolog-0.42.1-hml.265-linux-amd64.tar.gz) |
 
 ## Avisos ao abrir (instaladores sem assinatura)
 
